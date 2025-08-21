@@ -1,0 +1,24 @@
+{
+    "name": "dobesun/jdsdk",
+    "description": "JD Open API SDK for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dobesun",
+            "email": "dobesun@dobesun.com"
+        }
+    ],
+    "version": "1.0.0",
+    "keywords": ["jd", "sdk", "php", "open api", "jd open api"],
+    "autoload": {
+      "psr-4": {
+        "Dobesun\\Jdsdk\\": "src/"
+      }
+    },
+    "require": {
+      "php": "^8.0",
+      "guzzlehttp/guzzle": "^7.2",
+      "illuminate/support": "^10.47|^11.0|^12.0"
+    }
+  }
