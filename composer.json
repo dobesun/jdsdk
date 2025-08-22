@@ -9,7 +9,7 @@
             "email": "dobesun@dobesun.com"
         }
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": ["jd", "sdk", "php", "open api", "jd open api"],
     "autoload": {
       "psr-4": {
