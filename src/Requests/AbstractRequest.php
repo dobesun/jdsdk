@@ -11,6 +11,10 @@ abstract class AbstractRequest
 
     abstract public function getParams(): array;
 
+    abstract public function getBody(): array;
+
+    abstract public function getPathParams(): array;
+
     abstract public function parseResponse(Response $response): Response;
 
     abstract public function build(Client $client): self;

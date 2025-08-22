@@ -16,6 +16,10 @@ class BaseRequest extends AbstractRequest
 
     protected $params = [];
 
+    protected $body = [];
+
+    protected $pathParams = [];
+
     private Client $client;
 
     protected $headers = [];
@@ -59,6 +63,16 @@ class BaseRequest extends AbstractRequest
         $this->params[$key] = $value;
     }
 
+    public function getBody(): array
+    {
+        return $this->body;
+    }
+
+
+    public function getPathParams(): array
+    {
+        return $this->pathParams;
+    }
 
     public function parseResponse(Response $response): Response
     {
@@ -70,17 +84,17 @@ class BaseRequest extends AbstractRequest
         $this->client = $client;
         $timestamp = intval(microtime(true) * 1000);
         $signer = new Signer($timestamp, $this->accessToken);
-        $sign = $signer->sign(static::getParams());
+        $sign = $signer->sign(static::getParams(), static::getBody(), static::getPathParams());
 
         $this->headers = [
             'Content-Type' => 'application/json',
             'Accept' => 'application/json',
-            'Accept-encoding' => 'gzip',
-            'x-jos-access-token' => $this->accessToken,
-            'x-jos-app-key' => $this->client->appKey,
-            'x-jos-sign' => $sign,
-            'x-jos-timestamp' => $timestamp,
-            'x-jos-sdk-version' => 'java-v2',
+            'User-Agent' => 'OpenAPI-Generator/1.0.0/PHP',
+            'X-JOS-Access-Token' => $this->accessToken,
+            'X-JOS-App-Key' => $this->client->appKey,
+            'X-JOS-Sign' => $sign,
+            'X-JOS-Timestamp' => $timestamp,
+            'X-JOS-Sdk-Version' => 'php-v2',
         ];
 
         return $this;

@@ -9,6 +9,10 @@ class GetDetailProductRequest extends ListProductsRequest
 
     protected $method = 'GET';
 
+    protected $body = [];
+
+    protected $pathParams = [];
+
     protected $params = [
         'scene' => 'pop',
     ];
@@ -19,6 +23,7 @@ class GetDetailProductRequest extends ListProductsRequest
 
         $this->uri = $this->uri . '/' . $productId;
         $this->params['scene'] = $scene;
+        $this->pathParams['productId'] = $productId;
     }
 
 }

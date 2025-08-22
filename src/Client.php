@@ -23,10 +23,10 @@ class Client
         $this->basePath = $basePath;
         $this->httpClient = new GuzzleClient([
             'base_uri' => $this->basePath,
-            // 'proxy' => [
-            //     'http'  => 'http://182.168.1.201:8866',  // HTTP 代理
-            //     'https' => 'http://182.168.1.201:8866',  // HTTPS 代理
-            // ],
+            'proxy' => [
+                'http'  => 'http://182.168.1.201:8000',  // HTTP 代理
+                'https' => 'http://182.168.1.201:8000',  // HTTPS 代理
+            ],
             'verify' => false
         ]);
 

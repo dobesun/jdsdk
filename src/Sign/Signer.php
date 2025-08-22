@@ -39,7 +39,7 @@ class Signer
     /**
      * Java 的 parameterConvert 方法等价实现
      */
-    public function parameterConvert(array $systemParam, array $queryParam = [], ?string $bodyParam = null, array $pathParam = []): array
+    public function parameterConvert(array $systemParam, array $queryParam = [], ?array $bodyParam = null, array $pathParam = []): array
     {
         $paramMap = [];
 
@@ -90,7 +90,11 @@ class Signer
         ksort($paramMap);
 
         $preSignStr = $this->appSecret;
+
         foreach ($paramMap as $k => $v) {
+            if (is_array($v) && empty($v)) {
+                continue;
+            }
             $preSignStr .= $k . $v;
         }
         $preSignStr .= $this->appSecret;
@@ -101,11 +105,10 @@ class Signer
     /**
      * 生成签名和系统参数（方便直接用）
      */
-    public function sign(array $queryParam = [], ?string $bodyParam = null, array $pathParam = []): string
+    public function sign(array $queryParam = [], ?array $bodyParam = [], array $pathParam = []): string
     {
         $systemParam = $this->getSystemParams();
         $signMap     = $this->parameterConvert($systemParam, $queryParam, $bodyParam, $pathParam);
-        // dd($signMap);
         return $this->calculateSignature($signMap);
     }
 }
