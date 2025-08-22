@@ -1,5 +1,5 @@
 <?php
-namespace Dobesun\Jdsdk\Exceptions;
+namespace Dobesun\JdSdk\Exceptions;
 
 use Exception;
 

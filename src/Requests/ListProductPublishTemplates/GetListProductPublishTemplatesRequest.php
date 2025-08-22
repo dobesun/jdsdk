@@ -1,7 +1,7 @@
 <?php
-namespace Dobesun\Jdsdk\Requests\ListProductPublishTemplates;
+namespace Dobesun\JdSdk\Requests\ListProductPublishTemplates;
 
-use Dobesun\Jdsdk\Requests\ListProductPublishTemplates\ListProductPublishTemplatesRequest;
+use Dobesun\JdSdk\Requests\ListProductPublishTemplates\ListProductPublishTemplatesRequest;
 
 class GetListProductPublishTemplatesRequest extends ListProductPublishTemplatesRequest
 {

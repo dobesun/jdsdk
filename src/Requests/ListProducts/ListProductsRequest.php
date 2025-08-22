@@ -1,7 +1,7 @@
 <?php
-namespace Dobesun\Jdsdk\Requests\ListProducts;
+namespace Dobesun\JdSdk\Requests\ListProducts;
 
-use Dobesun\Jdsdk\Requests\BaseRequest;
+use Dobesun\JdSdk\Requests\BaseRequest;
 
 class ListProductsRequest extends BaseRequest
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Dobesun\Jdsdk;
+namespace Dobesun\JdSdk;
 
 use GuzzleHttp\Client as GuzzleClient;
 

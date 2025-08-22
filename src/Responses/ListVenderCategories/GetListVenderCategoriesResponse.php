@@ -1,7 +1,7 @@
 <?php
-namespace Dobesun\Jdsdk\Responses\ListVenderCategories;
+namespace Dobesun\JdSdk\Responses\ListVenderCategories;
 
-use Dobesun\Jdsdk\Responses\BaseResponse;
+use Dobesun\JdSdk\Responses\BaseResponse;
 
 class GetListVenderCategoriesResponse extends BaseResponse
 {

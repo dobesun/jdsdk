@@ -1,7 +1,7 @@
 <?php
-namespace Dobesun\Jdsdk\Requests\ListVenderCategories;
+namespace Dobesun\JdSdk\Requests\ListVenderCategories;
 
-use Dobesun\Jdsdk\Requests\BaseRequest;
+use Dobesun\JdSdk\Requests\BaseRequest;
 
 class ListVenderCategoriesRequest extends BaseRequest
 {

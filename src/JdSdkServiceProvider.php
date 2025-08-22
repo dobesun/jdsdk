@@ -1,5 +1,5 @@
 <?php
-namespace Dobesun\Jdsdk;
+namespace Dobesun\JdSdk;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,8 +1,8 @@
 <?php
-namespace Dobesun\Jdsdk;
+namespace Dobesun\JdSdk;
 
-use Dobesun\Jdsdk\Requests\BaseRequest;
-use Dobesun\Jdsdk\Client;
+use Dobesun\JdSdk\Requests\BaseRequest;
+use Dobesun\JdSdk\Client;
 class Spurn
 {
     protected $client;

@@ -1,7 +1,7 @@
 <?php
-namespace Dobesun\Jdsdk\Responses;
+namespace Dobesun\JdSdk\Responses;
 
-use Dobesun\Jdsdk\Responses\BaseResponse;
+use Dobesun\JdSdk\Responses\BaseResponse;
 use Psr\Http\Message\ResponseInterface;
 
 class ResponseWithPagination extends BaseResponse

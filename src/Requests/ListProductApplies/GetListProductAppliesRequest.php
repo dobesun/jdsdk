@@ -1,6 +1,6 @@
 <?php
 
-namespace Dobesun\Jdsdk\Requests\ListProductApplies;
+namespace Dobesun\JdSdk\Requests\ListProductApplies;
 
 /**
  * @url https://open.jd.com/v2/#/doc/api?apiCateId=100081&apiId=100510&apiName=listProductApplies&gwType=1

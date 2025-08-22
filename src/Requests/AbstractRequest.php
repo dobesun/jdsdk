@@ -1,8 +1,8 @@
 <?php
-namespace Dobesun\Jdsdk\Requests;
+namespace Dobesun\JdSdk\Requests;
 
 use GuzzleHttp\Psr7\Response;
-use Dobesun\Jdsdk\Client;
+use Dobesun\JdSdk\Client;
 abstract class AbstractRequest
 {
     abstract public function getUri(): string;

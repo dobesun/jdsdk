@@ -1,8 +1,8 @@
 <?php
 
-namespace Dobesun\Jdsdk\Requests\ListVenders;
+namespace Dobesun\JdSdk\Requests\ListVenders;
 
-use Dobesun\Jdsdk\Requests\BaseRequest;
+use Dobesun\JdSdk\Requests\BaseRequest;
 
 /**
  * 分页查询商家基本信息列表

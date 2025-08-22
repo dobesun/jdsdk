@@ -1,5 +1,5 @@
 <?php
-namespace Dobesun\Jdsdk\Requests\ListProducts;
+namespace Dobesun\JdSdk\Requests\ListProducts;
 
 class GetDetailProductRequest extends ListProductsRequest
 {

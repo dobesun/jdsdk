@@ -1,5 +1,5 @@
 <?php
-namespace Dobesun\Jdsdk\Requests\ListSkuMaterials;
+namespace Dobesun\JdSdk\Requests\ListSkuMaterials;
 
 class GetListSkuMaterialsRequest extends ListSkuMaterialsRequest
 {

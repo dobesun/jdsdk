@@ -1,7 +1,7 @@
 <?php
-namespace Dobesun\Jdsdk\Requests\ListSkuMaterials;
+namespace Dobesun\JdSdk\Requests\ListSkuMaterials;
 
-use Dobesun\Jdsdk\Requests\BaseRequest;
+use Dobesun\JdSdk\Requests\BaseRequest;
 
 class ListSkuMaterialsRequest extends BaseRequest
 {

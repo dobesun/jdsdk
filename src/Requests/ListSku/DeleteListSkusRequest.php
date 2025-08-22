@@ -1,5 +1,5 @@
 <?php
-namespace Dobesun\Jdsdk\Requests\ListSku;
+namespace Dobesun\JdSdk\Requests\ListSku;
 
 class DeleteListSkusRequest extends ListSkusRequest
 {

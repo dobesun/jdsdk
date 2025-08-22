@@ -1,7 +1,7 @@
 <?php
-namespace Dobesun\Jdsdk\Requests\ListProductPublishTemplates;
+namespace Dobesun\JdSdk\Requests\ListProductPublishTemplates;
 
-use Dobesun\Jdsdk\Requests\BaseRequest;
+use Dobesun\JdSdk\Requests\BaseRequest;
 
 class ListProductPublishTemplatesRequest extends BaseRequest
 {

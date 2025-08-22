@@ -1,5 +1,5 @@
 <?php
-namespace Dobesun\Jdsdk\Facades;
+namespace Dobesun\JdSdk\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

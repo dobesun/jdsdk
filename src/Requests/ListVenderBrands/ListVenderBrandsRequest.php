@@ -1,7 +1,7 @@
 <?php
-namespace Dobesun\Jdsdk\Requests\ListVenderBrands;
+namespace Dobesun\JdSdk\Requests\ListVenderBrands;
 
-use Dobesun\Jdsdk\Requests\BaseRequest;
+use Dobesun\JdSdk\Requests\BaseRequest;
 
 /**
  * 获取商家经营品牌，包括：1、查询授权品牌（可直接发品）；2、商家可选品牌（已授权+未授权）

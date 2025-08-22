@@ -13,7 +13,7 @@
     "keywords": ["jd", "sdk", "php", "open api", "jd open api"],
     "autoload": {
       "psr-4": {
-        "Dobesun\\Jdsdk\\": "src/"
+        "Dobesun\\JdSdk\\": "src/"
       }
     },
     "require": {

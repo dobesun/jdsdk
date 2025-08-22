@@ -1,9 +1,9 @@
 <?php
 
-namespace Dobesun\Jdsdk\Requests;
+namespace Dobesun\JdSdk\Requests;
 
 use GuzzleHttp\Psr7\Response;
-use Dobesun\Jdsdk\Client;
+use Dobesun\JdSdk\Client;
 use Illuminate\Support\Str;
 use Dobesun\JdSdk\Sign\Signer;
 use Illuminate\Support\Facades\Log;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dobesun\Jdsdk\Responses\ListProducts;
+namespace Dobesun\JdSdk\Responses\ListProducts;
 
-use Dobesun\Jdsdk\Responses\BaseResponse;
+use Dobesun\JdSdk\Responses\BaseResponse;
 
 class GetDetailProductResponse extends BaseResponse
 {

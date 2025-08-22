@@ -1,5 +1,5 @@
 <?php
-namespace Dobesun\Jdsdk\Requests\ListProductApplies;
+namespace Dobesun\JdSdk\Requests\ListProductApplies;
 
 class PostListProductAppliesRequest extends ListProductAppliesRequest
 {
